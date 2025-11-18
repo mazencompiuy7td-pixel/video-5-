@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mazen Video Downloader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl">
+  <main class="page">
+    <header class="header">
+      <h1>مازن — Video Downloader</h1>
+      <p class="subtitle">حمّل فيديوهات من TikTok وFacebook وInstagram بلينك واحد. استخدم بحكمة واحترام حقوق الملكية.</p>
+    </header>
+
+    <section class="card">
+      <label class="label">ضع رابط الفيديو هنا</label>
+      <div class="input-row">
+        <input id="url" class="input" placeholder="أدخل رابط TikTok / Instagram / Facebook" />
+        <button id="pasteBtn" class="btn outline">لصق</button>
+      </div>
+
+      <div class="controls">
+        <button id="getBtn" class="btn primary">إحضار رابط مباشر</button>
+        <button id="downloadBtn" class="btn accent">تنزيل الفيديو</button>
+      </div>
+
+      <div id="status" class="status">جاهز</div>
+
+      <div id="result" class="result hidden">
+        <label class="label">الرابط المباشر:</label>
+        <a id="directLink" class="direct" target="_blank" rel="noopener"></a>
+      </div>
+
+      <div id="progressWrap" class="progress-wrap hidden">
+        <div id="progressBar" class="progress-bar"><span id="progressText">0%</span></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>مشروع تجريبي — اسم المشروع: <strong>Mazen</strong></small>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
